@@ -16,6 +16,7 @@ The goal of maintaining documentation of *"how we do stuff"* as a repository of 
 2. **Team Organisation and Structure** - how the team functions and operates from a high level perspective ...
 3. **Lifecycle of a Task** - the best way to learn about the process of product development and engineering is to follow the lifecycle of an idea, envolving into a product feature all the way up to code running in production
 4. **Code Reviews** - team value: no single line of code should't go into production without an additional set of eyes passing through
-5. **Coding Practices** - definitely not a "set in stone" internal 
-6. **Testing**
-7. **Monitoring**
+5. **Coding Practices** - by no means a "set in stone" internal guideline, but a non-exaustive collection of good practices collected over time
+6. **Testing** - multiple angles on how to keep your code tested 
+7. **Monitoring** - making sure we'll be able to monitor your code once on production
+
