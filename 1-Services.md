@@ -9,4 +9,8 @@ All services mentioned below are managed by an **IT manager** - not an full time
 
 Everybody get's a `name.lastname@zemanta.com` email account hosted on google apps. IT manager can provide you one. Not only you'll be able to access your email, calendar, google drive, hangouts etc, but it will also serve you as the prefered method of authenticating with other services i.e. trello, slack, etc.
 
+Within google apps, we use the following products besides email of course:
+
+* **calendar** - 
+
 
