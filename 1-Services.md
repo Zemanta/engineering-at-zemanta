@@ -26,6 +26,10 @@ Disruptive enterprise products like Slack are shifting the main means of communi
 * place to share news and cool finds
 * we even have a bot that tells you what our faviourite place serves for lunch today
 
+A prefereed setup for every team member is to have slack set up locally on your machine in a way that **enables you to recieve desktop notifications** while you're in the office. Having slack set up on your phone is neat too.
+
+
+
 
 
 
