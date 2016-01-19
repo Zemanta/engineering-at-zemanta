@@ -42,7 +42,10 @@ The 5 aforementioned teams are:
 * **Next Generation Team** - responsible for building next generation features of our platform that are directly exposed to our users
 * **Support and Improve Team** - empowered to make continious improvements to features introduced to our platform and making sure things don't break backwards
 * **Backend Team** - we own a large backend responsible for real time bidding, this team builds features that are backend related and supports our supply partners
-* **Data Science Team** - 
+* **Data Science Team** - *"building painkillers, not vitamins"*; in other words they're responsible and empowered to continiously improve and monitor our bidding strategies and algorithms, find new data we can learn from, drive a continious stream of experiments that lead towards acquiring new kwnoledge that provided back to product managers to make educated product decisions
+* **Infrastructure Team** - a team that supports other teams in terms of providing the means of building new features i.e. infrastructure. This is continiously making improvements to our underlying systems, handles configuration, builds tools to make a developer's life easier and handles day to day system operations where we lack automation. 
+
+
 
 
 
