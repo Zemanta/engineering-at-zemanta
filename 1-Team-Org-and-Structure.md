@@ -1,1 +1,2 @@
-# Team organisation and structure 
+# Team Organisation and Structure 
+
