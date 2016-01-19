@@ -29,6 +29,16 @@ Disruptive enterprise products like Slack are shifting the main means of communi
 A prefereed setup for every team member is to have slack set up locally on your machine in a way that **enables you to recieve desktop notifications** while you're in the office. Having slack set up on your phone is neat too.
 
 
+## 3. Trello
+
+Trello is our main ticket, epic, issue, bug, roadmap tracking service used across all of our teams. We'll get into the details of the actual program management and execution later on, but at this point it's important to note that everbody on zemanta's product and engineering team should treat trello as the main means of communication to track and update on progress of their work. Remember: **if it's not on trello, we don't know you're working on it**.
+
+
+## 4. Github
+
+
+
+
 
 
 
