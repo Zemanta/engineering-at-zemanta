@@ -30,6 +30,14 @@ Disruptive enterprise products like Slack are shifting the main means of communi
 
 A prefereed setup for every team member is to have slack set up locally on your machine in a way that **enables you to recieve desktop notifications** while you're in the office. Having slack set up on your phone is neat too.
 
+The IT manager will give you access to Slack via an email invite. Once you log in, make sure you fill out your profile with:
+
+* a nice pic of yourself
+* your full name
+* your telephone contact number
+* your title and your team
+
+We ask all employees to keep their profile up to date since slack also serves us as our main team directory. 
 
 ## 3. Trello
 
@@ -38,6 +46,9 @@ Trello is our main ticket, epic, issue, bug, roadmap tracking service used acros
 * If you're an engineer: you manager should make sure you have access and are aware of at least 3 trello boards: your team's main board and backlog boards and the cross-team milestones board managed by product managers.
 
 * If you're a product manager: your manager has a role to provide you with access to appropriate engineering boards and product boards.
+
+
+The IT manager will give you access to trello via an email invite.
 
 ## 4. Github
 
@@ -54,6 +65,7 @@ As mentioned above we use github for:
 * we don't do releases
 * we don't do private forks, just push branches directly to our original remotes and base your pull requests off of them
 
+The IT manager will give you access to github by adding your profile to Zemanta org.
 
 ## 5. Circle CI
 
@@ -62,6 +74,14 @@ For every `git push` we run a build on Circle CI, the status of the build is pro
 A successful build on `master` branch is also a prerequisite for most of our deployment procedures. 
 
 You can access Circle CI via github OAuth. Just log in and "follow" the appropriate projects your manager has pointed out, so you'll be able to monitor build statuses. 
+
+## 6. Dapulse
+
+All tech leads and managers also use Dapulse as a digested and curated version of tracking high level progress across all teams.
+
+## 7. 
+
+
 
 
 
