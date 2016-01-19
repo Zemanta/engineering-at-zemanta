@@ -95,6 +95,12 @@ If required, IT manager will provide you access to AWS console. You'll need goog
 
 You'll be able to access this console via google apps OAuth once IT manager will provide you with access. We utilize appengine for a single web application where high availability and geo redundancy is required. 
 
+## 11. Waffle.io
+
+This is a free service, so feel free to log in with your github account. You'll find one board there where we aggregate pull requests from all important and frequently updated repositories. 
+
+This basically serves as a very nice addition to github pull requests since you're able to get an overview of all pull requests with a single glance and then apply a filter to see only those that are directly addressed to you. 
+
 
 
 
