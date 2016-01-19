@@ -41,7 +41,22 @@ Trello is our main ticket, epic, issue, bug, roadmap tracking service used acros
 
 ## 4. Github
 
-Besides being the main service that hosts all our code, github is also 
+Besides being the main service that hosts all our code, github is also used as a preferred method to authenticate to other engineering services that enable github based OAuth. No need for you to create a separate account, just use your existing github account and **make sure you have [2FA](https://help.github.com/articles/about-two-factor-authentication/)** set up once you're added to the [github.com/Zemanta](https://github.com/Zemanta) organisation. 
+
+Do note that there are many repositories in our arsenal, but the good news is that you'll only have to worry about a handful of them. The rest are considered either legacy, experimental or hackday produced code.
+
+As mentioned above we use github for:
+
+* hosting our git repos
+* authenticating to other services (e.g. Circle CI)
+* code reviews via pull requests
+* we don't do issue tracking via github
+* we don't do releases
+* we don't do private forks, just push branches directly to our original remotes and base your pull requests off of them
+
+
+
+
 
 
 
