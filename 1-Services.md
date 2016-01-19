@@ -18,4 +18,15 @@ Within google apps, we use the following products besides email of course:
 
 ## 2. Slack
 
+Disruptive enterprise products like Slack are shifting the main means of communication in companies from email to slack. We were early adopters of slack and it changed how we communicate. You'll find slack being used for:
+
+* quick syncs between teams
+* developer and product FYI announcements
+* one place to aggregate all pull request comments from github (enabled by one of many [slack's integrations](https://slack.com/apps))
+* place to share news and cool finds
+* we even have a bot that tells you what our faviourite place serves for lunch today
+
+
+
+
 
