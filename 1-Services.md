@@ -15,6 +15,8 @@ Within google apps, we use the following products besides email of course:
 * **hangouts** - preferred means for video conferences
 * **google drive** - we use google drive very extensively and there you'll be able to find: prouct requirements documents, ad hoc spreadsheets, metting logs and notes, even notes from one on one chats
 
+One more note about Google apps: **make sure you have [2FA](https://www.google.com/landing/2step/) set up**.
+
 
 ## 2. Slack
 
@@ -39,7 +41,7 @@ Trello is our main ticket, epic, issue, bug, roadmap tracking service used acros
 
 ## 4. Github
 
-
+Besides being the main service that hosts all our code, github is also 
 
 
 
