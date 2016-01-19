@@ -21,7 +21,9 @@ The goal of maintaining documentation of *"how we do stuff"* as a repository of 
 7. **Monitoring** - making sure we'll be able to monitor your code once on production
 
 ----
+
 *If you're a new hire, we recommend reading through these documents very dilligently. Asking questions and requiring clarifications is entirely appropriate and will enable us to refine the documentation where it lacks details and clarity. Thank you!*
+
 ----
 
 
