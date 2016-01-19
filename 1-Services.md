@@ -33,6 +33,9 @@ A prefereed setup for every team member is to have slack set up locally on your 
 
 Trello is our main ticket, epic, issue, bug, roadmap tracking service used across all of our teams. We'll get into the details of the actual program management and execution later on, but at this point it's important to note that everbody on zemanta's product and engineering team should treat trello as the main means of communication to track and update on progress of their work. Remember: **if it's not on trello, we don't know you're working on it**.
 
+* If you're an engineer: you manager should make sure you have access and are aware of at least 3 trello boards: your team's main board and backlog boards and the cross-team milestones board managed by product managers.
+
+* If you're a product manager: your manager has a role to provide you with access to appropriate engineering boards and product boards.
 
 ## 4. Github
 
