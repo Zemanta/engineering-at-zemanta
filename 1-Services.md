@@ -61,7 +61,9 @@ For every `git push` we run a build on Circle CI, the status of the build is pro
 
 A successful build on `master` branch is also a prerequisite for most of our deployment procedures. 
 
-You can access Circle CI via github OAuth.
+You can access Circle CI via github OAuth. Just log in and "follow" the appropriate projects your manager has pointed out, so you'll be able to monitor build statuses. 
+
+
 
 
 
