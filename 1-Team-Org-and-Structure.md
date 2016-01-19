@@ -35,6 +35,15 @@ There are multiple roles within this team but here are the 2 main roles:
 
 ## 3. Engineering
 
+Engineering is organized into 5 teams, each with it's own role and purpose. Every team has a tech lead to whom all engineers within that team report to and a assigned product manager. Product manager and tech lead share a responsibility for project and program managment. We do not have dedicated project managers for that matter. 
+
+The 5 aforementioned teams are:
+
+* **Next Generation Team** - responsible for building next generation features of our platform that are directly exposed to our users
+* **Support and Improve Team** - empowered to make continious improvements to features introduced to our platform and making sure things don't break backwards
+* **Backend Team** - we own a large backend responsible for real time bidding, this team builds features that are backend related and supports our supply partners
+* **Data Science Team** - 
+
 
 
 
