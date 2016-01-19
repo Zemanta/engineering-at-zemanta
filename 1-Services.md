@@ -55,6 +55,20 @@ As mentioned above we use github for:
 * we don't do private forks, just push branches directly to our original remotes and base your pull requests off of them
 
 
+## 5. Circle CI
+
+For every `git push` we run a build on Circle CI, the status of the build is propagated back to github via [status checks](https://github.com/blog/1935-see-results-from-all-pull-request-status-checks) on every pull request (i.e. this let's the code reviewer know that the pull request breaks the build). 
+
+A successful build on `master` branch is also a prerequisite for most of our deployment procedures. 
+
+You can access Circle CI via github OAuth.
+
+
+
+
+
+
+
 
 
 
