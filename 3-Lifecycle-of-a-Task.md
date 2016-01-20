@@ -61,15 +61,34 @@ The purpose of providing tech notes on the backlog is to provide a brief outline
 * what are the known unknowns going forward?
 * where are the risks of this getting really complicated which would delay the expected deliver?
 
+Do note that tech notes are by no means full blown technical documentation, so keep things short and to the point.
+
+## 5. Main Engineering Board
+
+Once all the prerequisites are completed on a backlog based ticket:
+
+* presence of a PRD
+* tech notes
+* having a PM and at least one engineer responsible assigned
+
+.. than we can proceed with the actual implementation by placing the ticket on the **main engineering board**.
+
+The main engineering board has 5 columns:
+
+1. **Accepted** - on a weekly meeting with your team, you'll negotiate and agree on what will you commit to executing in the short term, you're able to do so by placing a ticket in this columns
+2. **Doing** - shortly after you being, you can let your team know you're working on an item by placing it in this column
+3. **Blocked** - if you encounter anything during the implementation that's blocking you to move forward, let your team know by placing it in this column *(e.g. the 3rd party API that was provided on the PRD is no longer supported and throws 500 on every call - we need to discuss on how to move forward)*
+4. **Review & Testing** - once you've finalized your implementation and are waiting for feedback from PMs or fellow engineers for a code review feedback, you can update the status of the item you're working on by placing it under this column
+5. **Done** - once you hear back from PMs, your peers approve of your code in the code review process and you've successfully deployed your code into production it's time to wrap things up and place the item under this column
+
+On your weekly team meeting you'll also validate the completion and archive the trello ticket placed in the done column.
+
+## 6. Release
 
 
 
 
 
-
-
-
-## 5. M
 
 
 
