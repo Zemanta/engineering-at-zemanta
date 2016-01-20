@@ -25,3 +25,23 @@ Examples:
 ----
 
 If an idea is not to just do a small alteration of an existing feature, but to introduce an entirely new concept into our product product managers put their idea into writing in a **product requirements document (PRD).**
+
+## 2. Product Requirements document
+
+A PRD is in writing because it makes a product manager's job easier, since they're able to gather all the input that's coming from many channels (i.e. sales, engineering, client's themselves) and then formulate a feature in writing so all the stakeholders that are even separated by continents and time zones can observe and participate in the process of refining ideas into the final feature.
+
+You'll see that a PRD can contain:
+
+* market research notes
+* links to correspondence with clients
+* feature rationale
+* diagrams, wireframes and whatever it takes to explain the UI to the person who'll be developing this
+* ...
+
+## 3. Epic
+
+Once a PRD is synced with stakeholders it will go to a **milestones** trello board, it will be placed in on trello ticket and we call that an **epic**.
+
+The milestones trello board is in place so everybody has a clear overview of the roadmap on a single dashboard.
+
+#
