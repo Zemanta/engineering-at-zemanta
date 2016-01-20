@@ -49,3 +49,28 @@ The milestones trello board is in place so everybody has a clear overview of the
 On a weekly basis, it's both a product manager's (PM) and tech lead's (TL) job to negotiate the priority of execution of epics and once that's determined both the PM and TL will transfer epics onto a **backlog trello board**.
 
 PM & TL will also look into the size of an epic and they might break it down to smaller deliverable tickets on the backlog.
+
+Once tickets end up on the backlog it's also time for engineers to get involved by providing technical feedback back to PM - in writing of course. We call this technical feedback **tech notes**.
+
+The purpose of providing tech notes on the backlog is to provide a brief outline how a feature will be implemented, obtain additional clarification from PM and to anwser common questions a PM might have:
+
+* what's the basic outline of the implementation?
+* which systems will the new feature alter?
+* will this feature yield major architectural changes?
+* what's a ballpark estimate on how long will it take to implement and how many of your team mates will this occupy?
+* what are the known unknowns going forward?
+* where are the risks of this getting really complicated which would delay the expected deliver?
+
+
+
+
+
+
+
+
+
+## 5. M
+
+
+
+Do note that every engineering team has their own backlog and their main board, but we have a single milestones board.
