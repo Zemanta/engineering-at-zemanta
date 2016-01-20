@@ -44,4 +44,8 @@ Once a PRD is synced with stakeholders it will go to a **milestones** trello boa
 
 The milestones trello board is in place so everybody has a clear overview of the roadmap on a single dashboard.
 
-#
+## 4. Backlog
+
+On a weekly basis, it's both a product manager's (PM) and tech lead's (TL) job to negotiate the priority of execution of epics and once that's determined both the PM and TL will transfer epics onto a **backlog trello board**.
+
+PM & TL will also look into the size of an epic and they might break it down to smaller deliverable tickets on the backlog.

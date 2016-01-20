@@ -4,7 +4,7 @@ Zemanta keeps process, product development and engineering practices transparent
 
 The goal of maintaining documentation of *"how we do stuff"* as a repository of markdown files on github is to treat our process:
 
-1. **transparent** - here for everyone to see 
+1. **transparent** - here for everyone to see
 2. **forkable** - everybody on our team is empowered and encouraged to improve and refine our process, so just send a pull request, we'll discuss this ASAP within the team and implement the changes
 3. **documented** - helps new hires to "get around" faster, makes everyone aware of what the team expects of them
 
@@ -12,12 +12,12 @@ The goal of maintaining documentation of *"how we do stuff"* as a repository of 
 
 ## Where do I start ?
 
-1. **Services** - the purpose of slack, google apps, github, new relic, pingdom ... 
+1. **Services** - the purpose of slack, google apps, github, new relic, pingdom ...
 2. **Team Organisation and Structure** - how the team functions and operates from a high level perspective ...
 3. **Lifecycle of a Task** - the best way to learn about the process of product development and engineering is to follow the lifecycle of an idea, envolving into a product feature all the way up to code running in production
 4. **Code Reviews** - team value: no single line of code should't go into production without an additional set of eyes passing through
 5. **Coding Practices** - by no means a "set in stone" internal guideline, but a non-exaustive collection of good practices collected over time
-6. **Testing** - multiple angles on how to keep your code tested 
+6. **Testing** - multiple angles on how to keep your code tested
 7. **Monitoring** - making sure we'll be able to monitor your code once on production
 
 ----
@@ -27,9 +27,4 @@ The goal of maintaining documentation of *"how we do stuff"* as a repository of 
 ## TODO
 
 * [ ] Spelling
-
-
-
-
-
-
+* [ ] Backlog trello board structure
