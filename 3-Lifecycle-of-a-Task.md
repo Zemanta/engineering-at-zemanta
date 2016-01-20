@@ -4,15 +4,15 @@ We'll follow one task from it's inception as an idea, all the way to it's implem
 
 ## 1. From Ideas to Epics
 
-Engineers are usually concerned with the **HOW** should we build something, but when fused together with the rest of the company, especially product managers we're engaged with the question **WHAT** to build. 
+Engineers are usually concerned with the **HOW** should we build something, but when fused together with the rest of the company, especially product managers we're engaged with the question **WHAT** to build.
 
-The anwsers to WHAT's are ideas and as long as they're not put in writing they stay ideas in someones head that will never reach the stage of actuall executuon. 
+The anwsers to WHAT's are ideas and as long as they're not put in writing they stay ideas in someones head that will never reach the stage of actuall executuon.
 
 ----
 
 **Important general note**
 
-One of key principles at Zemanta that touches almost all aspects of our work is: 
+One of key principles at Zemanta that touches almost all aspects of our work is:
 
 ***"If it's not in writing it doesn't exist!"***
 
@@ -24,4 +24,4 @@ Examples:
 
 ----
 
-
+If an idea is not to just do a small alteration of an existing feature, but to introduce an entirely new concept into our product product managers put their idea into writing in a **product requirements document (PRD).**
