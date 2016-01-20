@@ -63,7 +63,7 @@ The purpose of providing tech notes on the backlog is to provide a brief outline
 
 Do note that tech notes are by no means full blown technical documentation, so keep things short and to the point.
 
-## 5. Main Engineering Board
+## 5. Main Board
 
 Once all the prerequisites are completed on a backlog based ticket:
 
@@ -71,9 +71,9 @@ Once all the prerequisites are completed on a backlog based ticket:
 * tech notes
 * having a PM and at least one engineer responsible assigned
 
-.. than we can proceed with the actual implementation by placing the ticket on the **main engineering board**.
+.. than we can proceed with the actual implementation by placing the ticket on the **main board**.
 
-The main engineering board has 5 columns:
+The main board has 5 columns:
 
 1. **Accepted** - on a weekly meeting with your team, you'll negotiate and agree on what will you commit to executing in the short term, you're able to do so by placing a ticket in this columns
 2. **Doing** - shortly after you being, you can let your team know you're working on an item by placing it in this column
@@ -83,13 +83,14 @@ The main engineering board has 5 columns:
 
 On your weekly team meeting you'll also validate the completion and archive the trello ticket placed in the done column.
 
+Do note that every engineering team has their own backlog and their main board, but we have a single milestones board.
+
 ## 6. Release
 
+At Zemanta we release stuff in 2 distinct ways:
 
+* **Release with deploy** - if a feature doesn't directly affect our end users (e.g. we deploy a minor backend bidding algorithm adjustment) we deploy and that also counts as a release. Once you deploy it's important that you update your team via email and or trello to let them know something is relased.
 
+* **Release with feature flag** - however, if a feature does directly impact our end users (e.g. new button in a dashboard) we have a very intricate internal mechanism in place that allows a developer to hide their feature behind a feature flag, making the feature to be only available to a subset of users. Since PMs have the control to assign feature flags to subsets of users, they can release a feature whenever they please, relieving engineers of the responsibility of an release.
 
-
-
-
-
-Do note that every engineering team has their own backlog and their main board, but we have a single milestones board.
+Talk to your tech lead to get familiar on how to use our internal feature flags mechanism.
