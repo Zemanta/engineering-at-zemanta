@@ -129,6 +129,8 @@ So let's follow an example changeset from it's first commit all the way to a mer
 
 You've changed a file(s) in one of Zemanta's git repositories on github and you want to commit your code. Before you do so, make sure you've created a separate branch off master presumably. There's no need to create a private fork of our repository since it's more complicated to keep their master up to date with the origin. Once you've committed your code to this branch and pushed your newly created branch back to origin it's time to to create a **pull request (PR)** on github.
 
+Note: Please use the underscore naming convention for naming your branches i.e. `your_branch_name`.
+
 ## 2. Pull Request
 
 Creating a pull request on github is trivial and there are plenty of [resources](https://help.github.com/articles/using-pull-requests/) that will explain the intricacies of creating one. It's just important to remember that after you create one, you have to be sure it contains just the changes (i.e. entire diff) you've wanted to present to the reviewer.
@@ -210,3 +212,15 @@ We use **waffle.io** service to collect and track progress on all PR on a single
 3. **Reviewing** - your peers will place the PR into this column to notify the code review sender they're reviewing their code
 
 4. **Done** - once the review is merged, it will automatically end up in this column
+
+## 5. Code Review Feedback
+
+Your reviewers will provide feedback in 2 formats:
+
+1. **In-line comments** - it's best to put comments directly next to your diff and you should reply and or push additional commits to address the issues raised on every in-line comment
+
+2. **Closing remarks** - in the closing remarks, the reviewer will provide you with a general estimate of your proposed change. A reviewer might give you a conditional approval (and lay out those conditions) or a full approval of your changeset using a common phrase "Ship it!".
+
+## 6. Merge!
+
+Once you're are able to resolve / address all issues and come to a consensus then it's time to merge your changes to master branch. We recommend you first pull from master and make sure the build is successful and all conflict are resolved (also consider notifying reviewers of any large conflicts that might have occurred and point them to the appropriate commits), then feel free to merge to master and delete the remote branch since it's no longer required. 
