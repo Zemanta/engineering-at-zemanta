@@ -54,12 +54,19 @@ As you'll learn in the chapter "Code Reviews at Zemanta" we use github's pull re
 
 ![alt text](img/pull_request_success.png)
 
-You should never give somebody a green light, if their build is not successful.
+When reviewing code you should never give somebody a green light, if their build is not successful since they'll not be able to deploy this code anyway and code that isn't deployable is of no value to anyone.
 
+## 2. Applying the Right Technology to the Problem at Hand
 
-## 2. Applying the right technology to the problem at hand
+Sometimes a proposed changeset comes out as a beautiful piece of code that's tested, applies really good and smart coding practices and at first glance improves the overall quality of a particular module, but if it doesn't solve the problem it stated it did, it's of little to no value.
 
-Sometimes a proposed changeset
+To avoid such instances both the reviewer and the code review submitter have to play their part by:
+
+* **When submitting** a code review, make sure you provide enough context about the problem to the reviewer.
+* **When reivewing**, make sure you understand what the context of the proposed changes and invest extra time into validating that the code actually solves the problem at hand correctly.  
+
+*Pro tip:* An even more extreme case would be that we wouldn't be solving the right problem in the first place, but that's an issue that lies higher up in the entire engineering process, but pay attention to such cases also.
+
 
 ## 3. Preventing potential security issues or introducing harmful code
 
