@@ -37,9 +37,11 @@ An additional example might be something like this:
 #   return arg1 + arg2
 # ---------------------------------------------
 ```
-We invited version control systems like git and mercurial so that we don't have to worry about losing code. If you care so much about losing your function in the above example, we'd suggest deleting it, make a commit and tagging that commit for easier retrieval. Just don't leave it hanging around.
+We invented version control systems like git and mercurial so that we don't have to worry about losing code. If you care so much about losing your function in the above example, we'd suggest deleting it, make a commit and tagging that commit for easier retrieval. Just don't leave it hanging around.
 
-### 1.2. Cyclomatic Complexity
+### 1.2. Complexity
+
+Look for and evaluate the necessity of the introduced complexity in the proposed changeset. We also have standardized metrics we can easily approximate when evaluating for complexity i.e. cyclomatic complexity being one of such metrics.
 
 Wikipedia's definition of [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) is *"Cyclomatic complexity is a software metric (measurement), used to indicate the complexity of a program. It is a quantitative measure of the number of linearly independent paths through a program's source code."*
 
@@ -117,13 +119,76 @@ Also consider premature introduction of 3rd party libraries and evaluate the val
 
 ## 6. Technical Debt
 
-Arguably everything we covered before this point will reduce technical debt in your code in some aspect, but still pay special attention to the aspect of debt + interest in terms of effort we'll have to pay as a team, if the code gets introduced to the codebase. 
+Arguably everything we covered before this point will reduce technical debt in your code in some aspect, but still pay special attention to the aspect of debt + interest in terms of effort we'll have to pay as a team, if the code gets introduced to the codebase.
 
 # Code Review Process at Zemanta
 
-TODO:
+So let's follow an example changeset from it's first commit all the way to a merge back to master.
 
-* code review length
-* think from the receiving end
-* merge tactics
-* ship it!
+## 1. Branch off
+
+You've changed a file(s) in one of Zemanta's git repositories on github and you want to commit your code. Before you do so, make sure you've created a separate branch off master presumably. There's no need to create a private fork of our repository since it's more complicated to keep their master up to date with the origin. Once you've committed your code to this branch and pushed your newly created branch back to origin it's time to to create a **pull request (PR)** on github.
+
+## 2. Pull Request
+
+Creating a pull request on github is trivial and there are plenty of [resources](https://help.github.com/articles/using-pull-requests/) that will explain the intricacies of creating one. It's just important to remember that after you create one, you have to be sure it contains just the changes (i.e. entire diff) you've wanted to present to the reviewer.
+
+Feel free to create a code review as early or as late after you push your branch, since a PR will be updated with new commits to that branch.
+
+To make a PR worthy of the time of a reviewer, you have to make sure the following prerequisites are followed:
+
+### 2.1. Context
+
+Provide context to the reviewer so they'll be able to provide you feedback, if your code even solves the problem at hand and point you to the right direction. Put as much context as you think it's required to understand the problem you're solving. The best way it to put yourself in the role of the reviewer for a while and go over our PR yourself. Links to trello and perhaps other PRs are also a great resouce to provide context.
+
+### 2.2. Roadmap
+
+If your PR is intentionally missing something, because you plan to add this on in a separate PR, than explicitly declare what's missing in order not to confuse the reviewer.
+
+### 2.3. Changeset Size
+
+When submitting a PR, consider breaking down your changeset into multiple consecutive PR that are easier for a reviewer to grasp and wrap their head around. A suggested median size is around 500 lines of diff, anything beyond a 1000 is obviously too much for somebody to really digg into and produce a good review.
+
+### 2.4. Successful Build
+
+As already mentioned, we have github's PRs set up in a way that we display build status right next to your PR. The build status comes from Circle CI. So make sure your build is successful and all tests pass since a reviewer will notice it first and instruct you to fix that before continuing with the actual review.
+### 2.5. Auto Code Review on Codeclimate
+
+We're also using a remote service called codeclimate (and who's feedback is also reflected on on a PR) that analyzes your code and checks for code complexity, quality, etc.
+
+Let's look at an example codeclimate config file that's committed to the repository and see what checks does it perform on our code.
+
+```yaml
+engines:
+  pep8:
+    enabled: true
+  radon:
+    enabled: true
+    config:
+      threshold: "C"
+  eslint:
+    enabled: true
+
+ratings:
+   paths:
+   - "**.py"
+   - "**.js"
+
+exclude_paths:
+- client/lib/**/*
+- server/**/migrations/*.py
+```
+
+For this example we're using 3 quality checking modules:
+
+* `pep8` will check python code and fail, if it's not formatted acoring to pep8 standards
+* `radon` will compute and report on various complexity metics, including the aforementioned cyclomatic complexity
+* `eslint` is a modern JavaScript linter that will be run on your .js files
+
+All these modules will produce a report and declare, if your code is compliant with minimal review standards, thus relieving the reviewer of having to seek out those small inconsistencies. This will also make you faster since you'll be able to reduce the amount of hops between you and the reviewer.
+
+Note: do note that some repository might not yet have it's code analyzed on codeclimate continuously just yet. Feel free to help us set that up!
+
+## 3. Reviewer Selection
+
+ 
