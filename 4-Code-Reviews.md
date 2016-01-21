@@ -40,9 +40,9 @@ Although we measure this via Codeclimate it's still very important that a review
 
 ### 1.3. Module Length
 
+This applies to all aspects of structuring code into logical modules.
 
-
-
+By module we mean: functions, modules in python or go-lang, classes, something that holds lines of code together and logically separates them. If such a module is getting too large, start thinking on how to split one function into multiple function, breaking one huge source code file into a separate package etc.
 
 ### 1.4. Absence of Tests
 
@@ -60,3 +60,8 @@ Sometimes a proposed changeset
 ## 6. Detecting potential vulnerabilities
 
 # Code Review Process at Zemanta
+
+TODO:
+
+* code review length
+* think from the receiving end
