@@ -44,7 +44,17 @@ This applies to all aspects of structuring code into logical modules.
 
 By module we mean: functions, modules in python or go-lang, classes, something that holds lines of code together and logically separates them. If such a module is getting too large, start thinking on how to split one function into multiple function, breaking one huge source code file into a separate package etc.
 
-### 1.4. Absence of Tests
+### 1.4. Code Coverage
+
+Make sure the newly committed code is properly tested. Writing tests alongside writing code will usually produce better results in terms of overall quality, modularity and cyclomatic complexity mentioned above. So as long as you apply this principle to your work this shouldn't be a problem.  
+
+### 1.5. Breaking the Build
+
+As you'll learn in the chapter "Code Reviews at Zemanta" we use github's pull requests to review code of our peers before it get's merged into master. Alongside pull requests we also continuously test & build our code on Circle CI and the information about a build on our CI environment is also fed back to pull requests on github.
+
+![alt text](img/pull_request_success.png)
+
+You should never give somebody a green light, if their build is not successful.
 
 
 ## 2. Applying the right technology to the problem at hand
@@ -65,3 +75,5 @@ TODO:
 
 * code review length
 * think from the receiving end
+* merge tactics
+* ship it!
