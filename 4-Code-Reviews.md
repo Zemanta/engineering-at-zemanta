@@ -62,7 +62,7 @@ Make sure the newly committed code is properly tested. Writing tests alongside w
 
 As you'll learn in the chapter "Code Reviews at Zemanta" we use github's pull requests to review code of our peers before it get's merged into master. Alongside pull requests we also continuously test & build our code on Circle CI and the information about a build on our CI environment is also fed back to pull requests on github.
 
-![alt text](img/pull_request_success.png)
+![](img/pull_request_success.png)
 
 When reviewing code you should never give somebody a green light, if their build is not successful since they'll not be able to deploy this code anyway and code that isn't deployable is of no value to anyone.
 
@@ -191,4 +191,22 @@ Note: do note that some repository might not yet have it's code analyzed on code
 
 ## 3. Reviewer Selection
 
- 
+Ok, you have everything ready, now you have to think who is the person to submit this PR to? Ask your tech lead for help and also look at [`git blame`](https://help.github.com/articles/using-git-blame-to-trace-changes-in-a-file/) on github to seek out folks who have altered the code you've modified in the past.
+
+Note: if you're making architectural changes (e.g. adding a new output/input of a system or changing how systems communicate), you should add at least one member from the infrastructure team to the PR.
+
+To assign reviewers on a PR, we simply add github handles to the title of PR as show below. (Hopefully github will allow multiple "assignees" per PR in the future.)
+
+![](img/pull_request_title.png)
+
+## 4. Get your PR Noticed
+
+We use **waffle.io** service to collect and track progress on all PR on a single trello-like dashboard. You'll see that the dashboard has 4 columns:
+
+1. **Code Review Backlog** - you'll see that all newly created PR end up here
+
+2. **Ready for Code Review** - once your PR is ready, place it into this column to let your peers know it's ready for review (also pinging them on slack will not hurt)
+
+3. **Reviewing** - your peers will place the PR into this column to notify the code review sender they're reviewing their code
+
+4. **Done** - once the review is merged, it will automatically end up in this column
