@@ -26,5 +26,5 @@ The goal of maintaining documentation of *"how we do stuff"* as a repository of 
 
 ## TODO
 
-* [*] Spelling
+* [x] Spelling
 * [ ] Backlog trello board structure
