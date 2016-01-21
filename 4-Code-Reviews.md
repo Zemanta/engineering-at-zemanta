@@ -4,11 +4,9 @@ Code reviews come from an very important team wide value of having every single 
 
 Also knows as peer code reviews are an essential part in the process of:
 
-
-
 ## 1. Maintaining high quality of code of each codebase
 
-Quality of code is subjected to many opinions and points of view so in this guide we'll not be explicitly listing down a full and exhaustive list of properties of high quality code but here are a few examples.
+Quality of code is subjected to many opinions and points of view so in this guide we'll not be explicitly listing down a full and exhaustive list of properties of high quality code but here are a few **very obvious** examples.
 
 ### 1.1. Commented out Code
 
@@ -33,10 +31,25 @@ An additional example might be something like this:
 ```
 We invited version control systems like git and mercurial so that we don't have to worry about losing code. If you care so much about losing your function in the above example, we'd suggest deleting it, make a commit and tagging that commit for easier retrieval. Just don't leave it hanging around.
 
-### 1.2. 
+### 1.2. Cyclomatic Complexity
+
+Wikipedia's definition of [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) is *"Cyclomatic complexity is a software metric (measurement), used to indicate the complexity of a program. It is a quantitative measure of the number of linearly independent paths through a program's source code."*
+
+Although we measure this via Codeclimate it's still very important that a reviewer pays attention to this metric when reviewing code and proposes ways to reduce the complexity thus improving the readability of code.
+
+
+### 1.3. Module Length
+
+
+
+
+
+### 1.4. Absence of Tests
 
 
 ## 2. Applying the right technology to the problem at hand
+
+Sometimes a proposed changeset
 
 ## 3. Preventing potential security issues or introducing harmful code
 
@@ -45,3 +58,5 @@ We invited version control systems like git and mercurial so that we don't have 
 ## 5. Preventing over-engineering or premature optimizations
 
 ## 6. Detecting potential vulnerabilities
+
+# Code Review Process at Zemanta
