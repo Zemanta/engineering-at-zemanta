@@ -6,7 +6,7 @@ We'll follow one task from it's inception as an idea, all the way to it's implem
 
 Engineers are usually concerned with the **HOW** should we build something, but when fused together with the rest of the company, especially product managers we're engaged with the question **WHAT** to build.
 
-The anwsers to WHAT's are ideas and as long as they're not put in writing they stay ideas in someones head that will never reach the stage of actuall executuon.
+The answers to WHAT's are ideas and as long as they're not put in writing they stay ideas in someones head that will never reach the stage of actual execution.
 
 ----
 
@@ -35,14 +35,14 @@ You'll see that a PRD can contain:
 * market research notes
 * links to correspondence with clients
 * feature rationale
-* diagrams, wireframes and whatever it takes to explain the UI to the person who'll be developing this
+* diagrams, wire-frames and whatever it takes to explain the UI to the person who'll be developing this
 * ...
 
 ## 3. Epic
 
 Once a PRD is synced with stakeholders it will go to a **milestones** trello board, it will be placed in on trello ticket and we call that an **epic**.
 
-The milestones trello board is in place so everybody has a clear overview of the roadmap on a single dashboard.
+The milestones trello board is in place so everybody has a clear overview of the road-map on a single dashboard.
 
 ## 4. Backlog
 
@@ -52,7 +52,7 @@ PM & TL will also look into the size of an epic and they might break it down to 
 
 Once tickets end up on the backlog it's also time for engineers to get involved by providing technical feedback back to PM - in writing of course. We call this technical feedback **tech notes**.
 
-The purpose of providing tech notes on the backlog is to provide a brief outline how a feature will be implemented, obtain additional clarification from PM and to anwser common questions a PM might have:
+The purpose of providing tech notes on the backlog is to provide a brief outline how a feature will be implemented, obtain additional clarification from PM and to answer common questions a PM might have:
 
 * what's the basic outline of the implementation?
 * which systems will the new feature alter?
@@ -89,7 +89,7 @@ Do note that every engineering team has their own backlog and their main board, 
 
 At Zemanta we release stuff in 2 distinct ways:
 
-* **Release with deploy** - if a feature doesn't directly affect our end users (e.g. we deploy a minor backend bidding algorithm adjustment) we deploy and that also counts as a release. Once you deploy it's important that you update your team via email and or trello to let them know something is relased.
+* **Release with deploy** - if a feature doesn't directly affect our end users (e.g. we deploy a minor backend bidding algorithm adjustment) we deploy and that also counts as a release. Once you deploy it's important that you update your team via email and or trello to let them know something is released.
 
 * **Release with feature flag** - however, if a feature does directly impact our end users (e.g. new button in a dashboard) we have a very intricate internal mechanism in place that allows a developer to hide their feature behind a feature flag, making the feature to be only available to a subset of users. Since PMs have the control to assign feature flags to subsets of users, they can release a feature whenever they please, relieving engineers of the responsibility of an release.
 

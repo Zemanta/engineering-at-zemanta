@@ -13,9 +13,9 @@ The goal of maintaining documentation of *"how we do stuff"* as a repository of 
 ## Where do I start ?
 
 1. **Services** - the purpose of slack, google apps, github, new relic, pingdom ...
-2. **Team Organisation and Structure** - how the team functions and operates from a high level perspective ...
-3. **Lifecycle of a Task** - the best way to learn about the process of product development and engineering is to follow the lifecycle of an idea, envolving into a product feature all the way up to code running in production
-4. **Code Reviews** - team value: no single line of code should't go into production without an additional set of eyes passing through
+2. **Team Organization and Structure** - how the team functions and operates from a high level perspective ...
+3. **Lifecycle of a Task** - the best way to learn about the process of product development and engineering is to follow the life-cycle of an idea, evolving into a product feature all the way up to code running in production
+4. **Code Reviews** - team value: no single line of code shouldn't go into production without an additional set of eyes passing through
 5. **Coding Practices** - by no means a "set in stone" internal guideline, but a non-exaustive collection of good practices collected over time
 6. **Testing** - multiple angles on how to keep your code tested
 7. **Monitoring** - making sure we'll be able to monitor your code once on production
@@ -26,5 +26,5 @@ The goal of maintaining documentation of *"how we do stuff"* as a repository of 
 
 ## TODO
 
-* [ ] Spelling
+* [*] Spelling
 * [ ] Backlog trello board structure
