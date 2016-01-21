@@ -20,6 +20,14 @@ def some_function():
 ```
 You get the picture. Commented out code is an arguably a bad practice since you never know if the code around it is compatible with the commented out snippet.
 
+Often you'll also see:
+
+```python
+# TODO: something I'll never touch gain but I'm still
+# putting a TODO here - just in case :)
+
+```
+
 An additional example might be something like this:
 ```python
 # ---------------------------------------------
@@ -93,14 +101,23 @@ There are plenty of resources out there in the form of guides, books and documen
 * language or framework idioms
 * existing pattern idioms and patterns of the codebase (if they still make sense after your change)
 * language based formats as [PEP8](https://www.python.org/dev/peps/pep-0008/) or [go fmt](https://blog.golang.org/go-fmt-your-code)
+* expressiveness of code in general
 * ...
+
+As a general principle: **keep in mind that most probably the code you're writing will written once and then read many times by multiple people.** It's worth insisting
 
 Pro tip: to get you started here is a short intro to what idiomatic [Python](http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html), [Go-lang](https://golang.org/doc/effective_go.html) and [JavaScript](http://javascript.crockford.com/code.html) is.
 
 
 ## 5. Preventing Over-Engineering or Premature Optimizations
 
+Some say that premature optimizations are the root of all evil and misery in software engineering, we say it's a waste of your's and others precious time. When reviewing code, pay special attention to newly written wrappers, libraries and abstractions since they might be introduced prematurely to the codebase.
 
+Also consider premature introduction of 3rd party libraries and evaluate the value that they bring to the codebase as a whole. Ask yourself, if the newly introduced library can perhaps be replaced with minimal amount of custom code?  
+
+## 6. Technical Debt
+
+Arguably everything we covered before this point will reduce technical debt in your code in some aspect, but still pay special attention to the aspect of debt + interest in terms of effort we'll have to pay as a team, if the code gets introduced to the codebase. 
 
 # Code Review Process at Zemanta
 
