@@ -17,6 +17,7 @@ Within google apps, we use the following products besides email of course:
 
 One more note about Google apps: **make sure you have [2FA](https://www.google.com/landing/2step/) set up**.
 
+Do not use your personal emails for signing up for other SaaS. Meaning that if you are to create an account for example for New Relic, please create Google mail group newrelic@zemanta.com, add yourself(and others using this service) to that group and use that alias.
 
 ## 2. Slack
 
