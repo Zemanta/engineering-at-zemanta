@@ -20,7 +20,7 @@ The goal of maintaining documentation of *"how we do stuff"* as a repository of 
 6. **Testing** - multiple angles on how to keep your code tested
 7. **Monitoring** - making sure we'll be able to monitor your code once on production
 8. **Ecosystem** - explained the ecosystem we use at Zemanta
-9. **Learn the Technologies** - tutorials to learn new technologies as effectively as possible
+9. **Helpful Resources** - tutorials to help you learn technologies we use at Zemanata, as effectively as possible
 
 ----
 
