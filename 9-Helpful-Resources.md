@@ -1,4 +1,4 @@
-# Learn the Technologies
+# Helpful Resources
 
 ## 1. Go-lang
 
