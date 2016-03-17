@@ -205,13 +205,11 @@ To assign reviewers on a PR, we simply add github handles to the title of PR as 
 
 We use **waffle.io** service to collect and track progress on all PR on a single trello-like dashboard. You'll see that the dashboard has 4 columns:
 
-1. **Code Review Backlog** - you'll see that all newly created PR end up here
+1. **Code Review Backlog** - you'll see that all newly created PR end up here. Do know that once you open up a PR, your peers will assume that it's ready to be reviewed (also pinging them on slack wouldn't hurt).
 
-2. **Ready for Code Review** - once your PR is ready, place it into this column to let your peers know it's ready for review (also pinging them on slack will not hurt)
+2. **Reviewing** - your peers will place the PR into this column to notify the code review sender they're reviewing their code
 
-3. **Reviewing** - your peers will place the PR into this column to notify the code review sender they're reviewing their code
-
-4. **Done** - once the review is merged, it will automatically end up in this column
+3. **Done** - once the review is merged, it will automatically end up in this column
 
 ## 5. Code Review Feedback
 
@@ -223,4 +221,4 @@ Your reviewers will provide feedback in 2 formats:
 
 ## 6. Merge!
 
-Once you're are able to resolve / address all issues and come to a consensus then it's time to merge your changes to master branch. We recommend you first pull from master and make sure the build is successful and all conflict are resolved (also consider notifying reviewers of any large conflicts that might have occurred and point them to the appropriate commits), then feel free to merge to master and delete the remote branch since it's no longer required. 
+Once you're are able to resolve / address all issues and come to a consensus then it's time to merge your changes to master branch. We recommend you first pull from master and make sure the build is successful and all conflict are resolved (also consider notifying reviewers of any large conflicts that might have occurred and point them to the appropriate commits), then feel free to merge to master and delete the remote branch since it's no longer required.
