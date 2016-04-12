@@ -1,12 +1,12 @@
 # Code Reviews
 
-Code reviews come from an very important team wide value of having every single line of code subjected to the process of a code review.  
+Code reviews come from a very important team wide value of having every single line of code subjected to the process of a code review.
 
-Also knows as peer code reviews are an essential part in the process of:
+Also known as peer code reviews are an essential part in the process of:
 
 ## 1. Maintaining high quality of code of each codebase
 
-Quality of code is subjected to many opinions and points of view so in this guide we'll not be explicitly listing down a full and exhaustive list of properties of high quality code but here are a few **very obvious** examples.
+Quality of code is subjected to many opinions and points of view. In this guide we'll not be explicitly listing down a full and exhaustive list of properties of high quality code but here are a few **very obvious** examples.
 
 ### 1.1. Redundant Code or Comments
 
@@ -73,7 +73,7 @@ Sometimes a proposed changeset comes out as a beautiful piece of code that's tes
 To avoid such instances both the reviewer and the code review submitter have to play their part by:
 
 * **When submitting** a code review, make sure you provide enough context about the problem to the reviewer.
-* **When reivewing**, make sure you understand what the context of the proposed changes and invest extra time into validating that the code actually solves the problem at hand correctly.  
+* **When reivewing** make sure you understand what the context of the proposed changes and invest extra time into validating that the code actually solves the problem at hand correctly.
 
 *Pro tip:* An even more extreme case would be that we wouldn't be solving the right problem in the first place, but that's an issue that lies higher up in the entire engineering process, but pay attention to such cases also.
 
@@ -106,7 +106,7 @@ There are plenty of resources out there in the form of guides, books and documen
 * expressiveness of code in general
 * ...
 
-As a general principle: **keep in mind that most probably the code you're writing will written once and then read many times by multiple people.** It's worth insisting
+As a general principle: **keep in mind that most probably the code you're writing will be written once and then read many times by multiple people.** It's worth insisting
 
 Pro tip: to get you started here is a short intro to what idiomatic [Python](http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html), [Go-lang](https://golang.org/doc/effective_go.html) and [JavaScript](http://javascript.crockford.com/code.html) is.
 
@@ -129,7 +129,7 @@ So let's follow an example changeset from it's first commit all the way to a mer
 
 You've changed a file(s) in one of Zemanta's git repositories on github and you want to commit your code. Before you do so, make sure you've created a separate branch off master presumably. There's no need to create a private fork of our repository since it's more complicated to keep their master up to date with the origin. Once you've committed your code to this branch and pushed your newly created branch back to origin it's time to to create a **pull request (PR)** on github.
 
-Note: Please use the underscore naming convention for naming your branches i.e. `your_branch_name`.
+Note: Please use the underscore naming convention for naming your branches i.e. `prefix_branch_name`. Use prefix fea for a new feature, fix for a bugfix, etc.
 
 ## 2. Pull Request
 
@@ -141,11 +141,11 @@ To make a PR worthy of the time of a reviewer, you have to make sure the followi
 
 ### 2.1. Context
 
-Provide context to the reviewer so they'll be able to provide you feedback, if your code even solves the problem at hand and point you to the right direction. Put as much context as you think it's required to understand the problem you're solving. The best way it to put yourself in the role of the reviewer for a while and go over our PR yourself. Links to trello and perhaps other PRs are also a great resouce to provide context.
+Provide context to the reviewer so they'll be able to provide you with feedback, if your code even solves the problem at hand and point you to the right direction. Put as much context as you think it's required to understand the problem you're solving. The best way is to put yourself in the role of the reviewer for a while and go over your PR yourself. Links to trello and perhaps other PRs are also a great resource to provide context.
 
 ### 2.2. Roadmap
 
-If your PR is intentionally missing something, because you plan to add this on in a separate PR, than explicitly declare what's missing in order not to confuse the reviewer.
+If your PR is intentionally missing something, because you plan to add this in a separate PR, than explicitly declare what's missing in order not to confuse the reviewer.
 
 ### 2.3. Changeset Size
 
@@ -156,7 +156,7 @@ When submitting a PR, consider breaking down your changeset into multiple consec
 As already mentioned, we have github's PRs set up in a way that we display build status right next to your PR. The build status comes from Circle CI. So make sure your build is successful and all tests pass since a reviewer will notice it first and instruct you to fix that before continuing with the actual review.
 ### 2.5. Auto Code Review on Codeclimate
 
-We're also using a remote service called codeclimate (and who's feedback is also reflected on on a PR) that analyzes your code and checks for code complexity, quality, etc.
+We're also using a remote service called codeclimate (and who's feedback is also reflected on a PR) that analyzes your code and checks for code complexity, quality, etc.
 
 Let's look at an example codeclimate config file that's committed to the repository and see what checks does it perform on our code.
 
@@ -189,7 +189,7 @@ For this example we're using 3 quality checking modules:
 
 All these modules will produce a report and declare, if your code is compliant with minimal review standards, thus relieving the reviewer of having to seek out those small inconsistencies. This will also make you faster since you'll be able to reduce the amount of hops between you and the reviewer.
 
-Note: do note that some repository might not yet have it's code analyzed on codeclimate continuously just yet. Feel free to help us set that up!
+Note: some repositories might not yet have it's code analyzed on codeclimate continuously just yet. Feel free to help us set that up!
 
 ## 3. Reviewer Selection
 
@@ -223,4 +223,4 @@ Your reviewers will provide feedback in 2 formats:
 
 ## 6. Merge!
 
-Once you're are able to resolve / address all issues and come to a consensus then it's time to merge your changes to master branch. We recommend you first pull from master and make sure the build is successful and all conflict are resolved (also consider notifying reviewers of any large conflicts that might have occurred and point them to the appropriate commits), then feel free to merge to master and delete the remote branch since it's no longer required. 
+Once you're are able to resolve / address all issues and come to a consensus then it's time to merge your changes to master branch. We recommend you to first pull from master and make sure the build is successful and all conflict are resolved (also consider notifying reviewers of any large conflicts that might have occurred and point them to the appropriate commits), then feel free to merge to master and delete the remote branch since it's no longer required.
