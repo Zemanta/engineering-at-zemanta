@@ -24,7 +24,7 @@ Examples:
 
 ----
 
-If an idea is not to just do a small alteration of an existing feature, but to introduce an entirely new concept into our product product managers put their idea into writing in a **product requirements document (PRD).**
+If an idea is not just a small alteration of an existing feature, but introduction of an entirely new concept into our product, then product managers put their idea into writing in a **product requirements document (PRD).**
 
 ## 2. Product Requirements document
 
@@ -65,7 +65,7 @@ Do note that tech notes are by no means full blown technical documentation, so k
 
 ## 5. Main Board
 
-Once all the prerequisites are completed on a backlog based ticket:
+Once all prerequisites are completed on a backlog based ticket:
 
 * presence of a PRD
 * tech notes
