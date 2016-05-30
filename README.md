@@ -30,3 +30,6 @@ The goal of maintaining documentation of *"how we do stuff"* as a repository of 
 
 * [x] Spelling
 * [ ] Backlog trello board structure
+* [ ] Ecosystem Chapter
+* [ ] Testing Chapter
+* [ ] Coding Practices Chapter
