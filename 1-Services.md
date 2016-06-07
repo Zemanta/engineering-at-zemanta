@@ -2,7 +2,7 @@
 
 At Zemanta we rely on multiple 3rd party SaaS services to bare different responsibilities. A prerequisite for new hires, to get a grasp on how we operate, is to first obtain access to all of these services.
 
-All services mentioned below are managed by an **IT manager** - not an full time role at the moment, so VP of Engineering is currently in charge. 
+All services mentioned below are managed by an **IT manager** - not an full time role at the moment, so VP of Engineering is currently in charge.
 
 
 ## 1. Google apps
@@ -76,28 +76,18 @@ A successful build on `master` branch is also a prerequisite for most of our dep
 
 You can access Circle CI via github OAuth. Just log in and "follow" the appropriate projects your manager has pointed out, so you'll be able to monitor build statuses.
 
-## 6. Dapulse
-
-All tech leads and managers also use Dapulse as a digested and curated version of tracking high level progress across all teams.
-
-## 7. New relic
+## 6. New relic
 
 New relic is our main performance monitoring service for our django based applications. Turn to IT manager to obtain access.
 
-## 8. Codeclimate
+## 7. Codeclimate
 
 We also have Codeclimate integrated with github. For every `git push` codeclimate will analyze your code and determine, if it's according to our minimal coding standards (e.g. PEP8).
 
-## 9. AWS Console
+## 8. AWS Console
 
 If required, IT manager will provide you access to AWS console. You'll need google authenticator app set up on your phone. The purpose of this console is to inspect configuration of our infrastructure.
 
-## 10. Google Compute Cloud
+## 9. Google Compute Cloud
 
 You'll be able to access this console via google apps OAuth once IT manager will provide you with access. We utilize appengine for a single web application where high availability and geo redundancy is required.
-
-## 11. Waffle.io
-
-This is a free service, so feel free to log in with your github account. You'll find one board there where we aggregate pull requests from all important and frequently updated repositories.
-
-This basically serves as a very nice addition to github pull requests since you're able to get an overview of all pull requests with a single glance and then apply a filter to see only those that are directly addressed to you.
