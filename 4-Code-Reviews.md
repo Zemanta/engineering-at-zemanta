@@ -197,19 +197,18 @@ Ok, you have everything ready, now you have to think who is the person to submit
 
 Note: if you're making architectural changes (e.g. adding a new output/input of a system or changing how systems communicate), you should add at least one member from the infrastructure team to the PR.
 
-To assign reviewers on a PR, we simply add github handles to the title of PR as show below. (Hopefully github will allow multiple "assignees" per PR in the future.)
+To assign reviewers on a PR, simply assign one or more assignees to the PR. (Gihub supports multiple assignees as of [june 2016](https://github.com/blog/2178-multiple-assignees-on-issues-and-pull-requests)) Keep the number of assignees as low as possible - preferably 1 to 2 assignees.  
 
-![](img/pull_request_title.png)
 
-## 4. Get your PR Noticed
+## 4. Tracking Incoming PRs
 
-We use **waffle.io** service to collect and track progress on all PR on a single trello-like dashboard. You'll see that the dashboard has 4 columns:
+To stay on top of pull requests that are waiting on your feedback (i.e. you need to review them) use: [`github.com/pulls`](https://github.com/pulls).
 
-1. **Code Review Backlog** - you'll see that all newly created PR end up here. Do know that once you open up a PR, your peers will assume that it's ready to be reviewed (also pinging them on slack wouldn't hurt).
+There you can track pull requests across all reposities of Zemanta github org that are assigned to you via github filters i.e. `is:open is:pr assignee:tomazk user:Zemanta `
 
-2. **Reviewing** - your peers will place the PR into this column to notify the code review sender they're reviewing their code
+You can assume the following: **If you're assigned to a PR, that PR is ready to be reviewd and somebody is waiting on your feedback.** Even if the PR is already closed. 
 
-3. **Done** - once the review is merged, it will automatically end up in this column
+Note: historically we used waffle.io to track PRs assigned to you, but with improvements github introduced (multiple assignees, github.com/pulls) that service became obsolete.
 
 ## 5. Code Review Feedback
 
