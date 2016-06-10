@@ -240,7 +240,7 @@ class SphagettiTestCase(TestCase):
     cls.user = User(
       username= 'name',
       password= 'password',
-      created_dt= datetime.datetime(2016,01,01),
+      created_dt= datetime.datetime(2016,1,1),
       # ...
     )
     cls.user.save()
