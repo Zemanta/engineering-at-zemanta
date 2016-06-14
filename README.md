@@ -33,3 +33,4 @@ The goal of maintaining documentation of *"how we do stuff"* as a repository of 
 * [ ] Ecosystem Chapter
 * [ ] Testing Chapter
 * [ ] Coding Practices Chapter
+* [ ] Temporary Hot Fixes Best Practices
