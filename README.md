@@ -29,8 +29,9 @@ The goal of maintaining documentation of *"how we do stuff"* as a repository of 
 ## TODO
 
 * [x] Spelling
-* [ ] Backlog trello board structure
-* [ ] Ecosystem Chapter
-* [ ] Testing Chapter
-* [ ] Coding Practices Chapter
+* [ ] ~~Backlog trello board structure~~
+* [x] Ecosystem Chapter
+* [x] Testing Chapter
+* [x] Coding Practices Chapter
+* [x] Monitoring Chapter
 * [ ] Temporary Hot Fixes Best Practices
