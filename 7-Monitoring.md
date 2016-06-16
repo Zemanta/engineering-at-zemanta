@@ -52,6 +52,10 @@ Every panel on such dashboard, should be inlined with documentation explaining:
 
 ## Kapacitor
 
+Kapacitor is a standard component of the [influxdata.com's](http://influxdata.com) TICK (Telegraf + InfluxDB + Chronograf + Kapacitor) stack that we also adopted to faciliate:
+
+* **Metric materializing** - influx DB does not allow cross metric joins, so you have to continiously materialize composite metrics back to influx db, if you want to monitor them
+* **Alert triggering** - think of Kapacitor as a continious batch or stream metric processing system that can also tigger events upon a certian metric state. Hence Kapacitor is capable of triggering critical alerts on slack and pagerduty for us to act on.  
 
 ## Sentry
 
