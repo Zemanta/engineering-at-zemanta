@@ -79,3 +79,5 @@ Levels of uptime monitoring:
 
 
 ## Pagerduty
+
+All services responsible for triggering critical alerts pass their triggers to Pagerduty. We then use PD to schedule on-call teams and individuals and set up escalation policies. 
