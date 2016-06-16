@@ -47,7 +47,7 @@ Every panel on such dashboard, should be inlined with documentation explaining:
 * how to notice critical behaviour
 * what are the consequences (preferably consequences for the end user) if a critical state is reached
 
-
+![grafana dash](img/grafana-dash.png)
 
 
 ## Kapacitor
