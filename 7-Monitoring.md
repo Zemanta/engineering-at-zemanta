@@ -37,3 +37,33 @@ Both libraries above, send metircs to Telegraf via statsd compatibility layer th
 * Grafana is also the main source of truth for application state and performance the entire team always goes to as the **first point of contact upon state or performance inquiry**. 
 
 
+### Main Grafana Dashboards
+
+For every application, there's a corresponding Grafana dashboard we call **"main dash"**. As the name reveals, such a dashboard should expose only the main important metrics for that app.
+
+Every panel on such dashboard, should be inlined with documentation explaining:
+
+* what are we looking at
+* how to notice critical behaviour
+* what are the consequences (preferably consequences for the end user) if a critical state is reached
+
+
+
+
+## Kapacitor
+
+
+## Sentry
+
+TODO
+
+## New Relic
+
+TODO
+
+### New Relic Syntethics 
+
+TODO
+
+
+## Pagerduty
