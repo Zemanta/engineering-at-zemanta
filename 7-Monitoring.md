@@ -59,15 +59,23 @@ Kapacitor is a standard component of the [influxdata.com's](http://influxdata.co
 
 ## Sentry
 
-TODO
+If one notices an increased error rate on one of the main InfluxDB dashboards, they should consult with Sentry to investigate the details of erros thrown, since we collect all errors across all web apps in a single location - hosted sentry (getsentry.com).  
 
 ## New Relic
 
-TODO
+Parralel to Sentry, some critical python web apps are directly integrated with New Relic. We consult NR every time we notice a performance defect that our users can notice. 
+
+New Relic APM offers the best insights into web app performance, bottlenecks and performance trends. 
 
 ### New Relic Syntethics 
 
-TODO
+New Relic also enables continious uptime monitoring on different levels that we also utilize to detect downtime or breaking changes of our web apps. 
+
+Levels of uptime monitoring:
+
+* simple HTTP pings
+* scripted browsers, that perform an end to end check of an entire feature (i.e. logging into the dashboard and clicking on a button)
+
 
 
 ## Pagerduty
