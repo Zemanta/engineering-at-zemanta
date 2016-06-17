@@ -49,8 +49,11 @@ The responsibilty of an exchange described above is essentialy what **R**eal **T
 
 ## DSP - Demand Side Platform
 
-Contrary to SSPs offer specific tehnology 
-Entities plugged into exchanges 
+Contrary to SSPs offer tehnology directly to adverisers and advertising agencies that offer holistic advertsing services to to businesses who want to advertise their products and services. 
+
+Entities plugged into exchanges are usually DSPs who implement the RTB protocol and offer means to run adversing camapigns built on top of a very primitive protocal as RTB.
+
+
 
 
 
