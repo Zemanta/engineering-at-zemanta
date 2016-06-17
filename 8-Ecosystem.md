@@ -10,7 +10,6 @@ Analogy: you buy an automobile magazine for the purpose of looking at great pics
 
 Similar to the analogy above, banner ads break user's flow of seeking out content on the web. A native ad, does not break your flow and looks like relevant content for you to digest. 
 
-
 ## Supply and Demand
 
 You'll hear these two terms interchanging a lot and you'll also encounter them directly in code. 
@@ -18,7 +17,22 @@ You'll hear these two terms interchanging a lot and you'll also encounter them d
 * **Supply** - our business partners that supply us as with means to ship ads to websites against payment
 * **Demand** - advertisers using our platform, who have money to ship ads to websites
 
-## 
+## Publisher
+
+Ads are shown on web sites. In the advertising ecosystem, we use the term "publisher". Don't get confused, this is not a person or an entity in the context of news making or book printing.
+
+## SSP - Supply Side Platform
+
+This is a type of a business in the advertising ecosystem that builds technology to run ads for publishers. Publishers on their own don't develop this tech and ussually partner with one or more SSPs to supply themsleves with the following capabilities:
+
+* Displaying ads on various placements on their website
+* Running directly sold campaigns i.e. some large publishers might have their own ad sales teams who sell ad campaigns directly to advertisers
+* Making their ad placements available to other businesses in the advertising ecosystem covered later on in this guide
+
+
+## Exchange
+
+We've mentioned that SSPs enable publshers to make their ad placements available to other businesses in the ad ecosystem. 
 
 
 
