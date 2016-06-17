@@ -32,7 +32,27 @@ This is a type of a business in the advertising ecosystem that builds technology
 
 ## Exchange
 
-We've mentioned that SSPs enable publshers to make their ad placements available to other businesses in the ad ecosystem. 
+We've mentioned that SSPs enable publshers to make their ad placements available to other businesses in the ad ecosystem. Such a busines is usually an "ad exchange". Exchanges partner up with publishers and SSPs for the purpose of collecting as many of "requests to show ads" comming in from a diverse set of websites offering those requests. 
+
+The exchange's responsibility is to forward each such request to show an ad to other businesses who offer money for such requests, perform an auction and forward an ad of the winner of such an action back to the publisher or SSP.
+
+### Real Time Bidding
+
+The responsibilty of an exchange described above is essentialy what **R**eal **T**ime **B**idding protocol (RTB) does.
+
+* Entity (either SSP or a publisher) forwards a request to show an ad to an exchange
+* Exhange forwards a **bid request** to all other entities interested in such a request for an ad 
+* Bidders respond with a **bid response** that includes: price offered for such an ad, the ad itself
+* Exchange combines all bid responses and determines a winner based on an auction
+* Exchange sends the winning ad to the SSP or publisher and notifies the winner asynchrnously for billing purposes
+
+
+## DSP - Demand Side Platform
+
+Contrary to SSPs offer specific tehnology 
+Entities plugged into exchanges 
+
+
 
 
 
