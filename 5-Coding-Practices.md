@@ -1,14 +1,16 @@
 # Coding Practices
 
-This is a very short intro to a few opinionated beliefs about coding practices that are ever evolving and are being continuously improved. Nevertheless we decided to documented these practices for the sake of on-boarding newer team members and making their first couple of code review submissions easier.
+This is a very short intro to a few opinionated beliefs about coding practices that are ever evolving and are being continuously improved. We decided to documented some of these practices for the sake of on-boarding newer team members and making their first couple of code review submissions easier.
 
 The principles below apply to all languages we use: Python, Go, JavaScript.
+
+*Note: The current guide is lacking JavaScript best practices - contributions are therefore welcome.*
 
 ## 1. Writing Expressive Code
 
 We believe in writing expressive code vs documenting blocks of code with inline comments. Although inline comments can sometime aid into understanding code they aren't a replacement for expressively named variables, functions, exceptions etc.
 
-Let's take this Django view as an  exaggerated example.
+Let's take this Django view as an  exaggerated example:
 
 
 ```python
@@ -62,7 +64,7 @@ def login_view(request, aid):
 
 Some coders might argue that there's nothing wrong with the above example and that's true to some degree, if you're used to the aforementioned principle of inline-ing comments alongside blocks of code to explain the flow of the program.
 
-At Zemanta we subscribe to the principle: ***"Expressive code the point where comments become obsolete."***
+At Zemanta we subscribe to the principle: ***"Write expressive code the point where comments become obsolete."***
 
 Arguably the above example could be rewritten to:
 
@@ -121,7 +123,7 @@ class ErrorCode:
 
 **Classes or Interfaces as IO Client Encapulation**
 
-Encapsulating any IO client state (i.e. sockets, open files ..) is generally a good practice if they are written with the goal to abstract away any low level client code and provide a higher level functionality to the business logic communicating via client instance . Instances of such clients are injected into business logic thus making the injected code easier to test since clients can be mocked.
+Encapsulating any IO client state (i.e. sockets, open files ..) is generally a good practice, if they are written with the goal to abstract away any low level client code and provide a higher level functionality to the business logic that's communicating with an external system via client instance . Instances of such clients are injected into business logic thus making the injected code easier to test since clients can be mocked.
 
 ```python
 # Python
