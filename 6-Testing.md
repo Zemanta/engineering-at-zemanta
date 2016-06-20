@@ -1,7 +1,7 @@
 
 # Testing
 
-Testing code is important and we believe that every change of functionally should be accompanied with tests. We're not religious about 100% coverage, but that shouldn't be an excuse to not adding tests.
+Testing code is important and we believe that every change of functionally should be accompanied with tests. We're not religious about 100% coverage, but that shouldn't be an excuse for not adding tests.
 
 So far we have introduced the following categories of tests:
 
@@ -228,7 +228,7 @@ class HeavyClientTestCase(TestCase):
 
 ### 3.4. Fixtures
 
-[Fixtures](https://docs.djangoproject.com/en/1.9/howto/initial-data/) can be very useful for initiating your tests with data required to for tests to function.
+[Fixtures](https://docs.djangoproject.com/en/1.9/howto/initial-data/) can be very useful for initiating your tests with data required for tests to function.
 
 So instead of putting your data initialization spaghetti code into into your tests:
 
