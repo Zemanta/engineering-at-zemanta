@@ -30,7 +30,7 @@ There are multiple roles within this team but here are the 2 main roles:
    7. Communicate /w stakeholders
    8. Analyze product performance
 * **Account Manager & Customer Support** - mainly responsible for managing managed campaigns for our clients and supporting self-serve users of our DSP platform
-* **Product Marketing Manager** - this is a US based position and PMMs are responsible for marketing out product, helping sales to grasp our ever evolving technology, managing post release communication to clients
+* **Product Marketing Manager** - this is a US based position and PMMs are responsible for marketing our product, helping sales to grasp our ever evolving technology, managing post release communication to clients
 
 
 ## 3. Engineering
