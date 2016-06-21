@@ -141,7 +141,9 @@ To make a PR worthy of the time of a reviewer, you have to make sure the followi
 
 ### 2.1. Context
 
-Provide context to the reviewer so they'll be able to provide you with feedback, if your code even solves the problem at hand and point you to the right direction. Put as much context as you think it's required to understand the problem you're solving. The best way is to put yourself in the role of the reviewer for a while and go over your PR yourself. Links to trello and perhaps other PRs are also a great resource to provide context.
+Every non-trivial pull request should contain context about the change it is introducing, so a person looking at a PR can have a better idea about the reasoning behind your code. The reviewer needs context so they'll be able to provide you with feedback, if your code even solves the problem at hand and point you to the right direction. In addition, when someone is reading your code in the future, the context in the PR will help them understand your implementation decisions.
+
+At minimum, **you must include a link to a Trello ticket**, but you can add as much context as you think it's required to understand the problem you're solving. The best way to do this is to put yourself in the role of the reviewer for a while and go over your PR yourself.
 
 ### 2.2. Roadmap
 
