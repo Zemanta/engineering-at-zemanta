@@ -8,7 +8,7 @@ Zemanta is building a "native" DSP. Native advertising essentially means - adver
 
 Analogy: you buy an automobile magazine for the purpose of looking at great pics of cars. In the context of such a magazine, if you'd encounter an advertisment that would advertise funeral services, that adverisement would break your flow and intention of looking at great car pics. On the contrary, if you'd encounter an advertisment of a great car in an automative magazine and that would not break your flow and intention. 
 
-Similar to the analogy above, banner ads break user's flow of seeking out content on the web. A native ad, does not break your flow and looks like relevant content for you to digest. 
+Similar to the analogy above, banner ads break user's flow of seeking out content on the web. A native ad, does not break your flow and is hopefully relevant content for you to digest. 
 
 ## Supply and Demand
 
