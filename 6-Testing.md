@@ -309,7 +309,7 @@ class MonolithicTestCase(TestCase):
 
 ```python
 
-class MonolithicTestCase(TestCase):
+class NoLongerAMonolithicTestCase(TestCase):
 
   def test_my_first_function_success(self):
     result = my_first_function('my first param')
