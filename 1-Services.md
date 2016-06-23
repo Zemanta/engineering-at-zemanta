@@ -15,13 +15,13 @@ Within google apps, we use the following products besides email of course:
 * **Hangouts** - preferred means for video conferences
 * **Google drive** - we use google drive very extensively and there you'll be able to find: product requirements documents, ad hoc spreadsheets, meeting logs, even notes from one on one chats
 
-One more note about Google apps: **make sure you have [2FA](https://www.google.com/landing/2step/) set up**.
+One more note about Google apps: **make sure you have [2FA](https://www.google.com/landing/2step/) set up, it's manadatory**.
 
 Do not use your personal emails for signing up for other SaaS. If you are to create an account for example for New Relic, please create Google mail group newrelic@zemanta.com, add yourself(and others using this service) to that group and use that alias.
 
 ## 2. Slack
 
-Disruptive enterprise products like Slack are shifting the main means of communication in companies from email to slack. We were early adopters of slack and it changed how we communicate for the better. You'll find slack being used for:
+Disruptive enterprise products like Slack are shifting the main means of communication in companies from email to slack. We were early adopters of slack and it has changed how we communicate for the better. You'll find slack being used for:
 
 * quick syncs between teams
 * developer and product FYI announcements
@@ -29,7 +29,7 @@ Disruptive enterprise products like Slack are shifting the main means of communi
 * place to share news and cool finds on github
 * we even have a bot that tells you what our favorite restaurants serve for lunch today
 
-A preferred setup for every team member is to have slack set up locally on your machine in a way that **enables them to receive desktop notifications** while you're in the office. Having slack set up on your phone is neat too.
+The preferred setup for every team member is to have slack set up locally on your machine in a way that **enables them to receive desktop notifications** while you're in the office. Having slack set up on your phone is neat too.
 
 The IT manager will give you access to Slack via an email invite. Once you log in, make sure you fill out your profile with:
 
