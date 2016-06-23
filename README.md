@@ -24,11 +24,3 @@ The goal of maintaining documentation of *"how we do stuff"* as a repository of 
 
 *If you're a new hire, we recommend reading through these documents very diligently. Asking questions and requiring clarifications is entirely appropriate and will enable us to refine the documentation where it lacks details and clarity. Thank you!*
 
-## TODO
-
-* [x] Spelling
-* [x] Ecosystem Chapter
-* [x] Testing Chapter
-* [x] Coding Practices Chapter
-* [x] Monitoring Chapter
-* [ ] Temporary Hot Fixes Best Practices
