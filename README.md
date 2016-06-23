@@ -17,7 +17,7 @@ The goal of maintaining documentation of *"how we do stuff"* as a repository of 
 5. **Coding Practices** - by no means a "set in stone" internal guideline, but a non-exaustive collection of good practices collected over time
 6. **Testing** - multiple angles on how to keep your code tested
 7. **Monitoring** - making sure we'll be able to monitor your code once on production
-8. **Ecosystem** - explained the ecosystem we use at Zemanta
+8. **Ecosystem** - the context of Zemanta in the ad-tech space
 9. **Helpful Resources** - tutorials to help you learn technologies we use at Zemanata, as effectively as possible
 
 ----
