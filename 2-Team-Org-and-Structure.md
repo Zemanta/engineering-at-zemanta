@@ -16,7 +16,7 @@ Team members:
 
 ## 2. Customer Success Team
 
-As the name implies, this team exists so our customers (advertisers / content marketers) can be successful at what they do - promote content by driving audiences to it packaged into campaigns.
+As the name implies, this team exists so our customers (advertisers / content marketers) can be successful at what they do - promote content by driving audiences to it.
 
 There are multiple roles within this team but here are the 2 main roles:
 
