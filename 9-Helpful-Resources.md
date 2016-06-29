@@ -13,3 +13,10 @@ Here are two repositories that can facilitate your learning of Go programing lan
 ## 2. Python
 
 * [Idiomatic Python](http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html) 
+
+
+## 3. JavaScript
+
+*[Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+
+*[AngularJS Style Guide](https://github.com/johnpapa/angular-styleguide)
