@@ -106,7 +106,7 @@ There are plenty of resources out there in the form of guides, books and documen
 * expressiveness of code in general
 * ...
 
-As a general principle: **keep in mind that most probably the code you're writing will be written once and then read many times by multiple people.** 
+As a general principle: **keep in mind that most probably the code you're writing will be written once and then read many times by multiple people.**
 
 Pro tip: to get you started here is a short intro to what idiomatic [Python](http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html), [Go-lang](https://golang.org/doc/effective_go.html) and [JavaScript](http://javascript.crockford.com/code.html) is.
 
@@ -209,7 +209,7 @@ To stay on top of pull requests that are waiting on your feedback (i.e. you need
 
 There you can track pull requests across all reposities of Zemanta github org that are assigned to you via github filters i.e. `is:open is:pr assignee:tomazk user:Zemanta `
 
-You can assume the following: **If you're assigned to a PR, that PR is ready to be reviewd and somebody is waiting on your feedback.** Even if the PR is already closed. 
+You can assume the following: **If you're assigned to a PR, that PR is ready to be reviewd and somebody is waiting on your feedback.** Even if the PR is already closed.
 
 Note: historically we used waffle.io to track PRs assigned to you, but with improvements github introduced (multiple assignees, github.com/pulls) that service became obsolete.
 
@@ -221,7 +221,18 @@ Your reviewers will provide feedback in 2 formats:
 
 2. **Closing remarks** - in the closing remarks, the reviewer will provide you with a general estimate of your proposed change. A reviewer might give you a conditional approval (and lay out those conditions) or a full approval of your changeset using a common phrase "Ship it!".
 
-## 6. Merge!
+## 6. Squash Commits and Merge
 
+Once you're are able to resolve / address all issues and come to a consensus then it's time to merge your changes to master branch. We recommend you to first pull from master and make sure the build is successful and all conflict are resolved (also consider notifying reviewers of any large conflicts that might have occurred and point them to the appropriate commits).
 
-Once you're are able to resolve / address all issues and come to a consensus then it's time to merge your changes to master branch. We recommend you to first pull from master and make sure the build is successful and all conflict are resolved (also consider notifying reviewers of any large conflicts that might have occurred and point them to the appropriate commits), then feel free to merge to master and delete the remote branch since it's no longer required.
+After that make sure that you squash your commits and rebase them to master. Rebasing commits and squashing them can be very confusing via CLI, but luckily for us Github made this process very trivial via the ["Confirm squash and merge"](https://github.com/blog/2141-squash-your-commits) button on every pull request.  
+
+![](https://cloud.githubusercontent.com/assets/143418/14119749/7756ff60-f5a4-11e5-8597-12dcbb363746.png)
+
+Why not simply merging by creating a merge commit? Because we want to have a usable history with clear references to pull requests.
+
+**TL;DR**
+
+1. Click on "Confirm squash and merge".
+2. Make sure the Pull Request is referenced in the squashed commit (i.e. `#125`).
+3. Delete the merged branch on github. (It's trivially restorable)
