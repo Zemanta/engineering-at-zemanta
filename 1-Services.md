@@ -80,14 +80,10 @@ You can access Circle CI via github OAuth. Just log in and "follow" the appropri
 
 New relic is our main performance monitoring service for our django based applications. Turn to IT manager to obtain access.
 
-## 7. Codeclimate
-
-We also have Codeclimate integrated with github. For every `git push` codeclimate will analyze your code and determine, if it's according to our minimal coding standards (e.g. PEP8).
-
-## 8. AWS Console
+## 7. AWS Console
 
 If required, IT manager will provide you access to AWS console. You'll need google authenticator app set up on your phone. The purpose of this console is to inspect configuration of our infrastructure.
 
-## 9. Google Compute Cloud
+## 8. Google Compute Cloud
 
 You'll be able to access this console via google apps OAuth once IT manager will provide you with access. We utilize appengine for a single web application where high availability and geo redundancy is required.
