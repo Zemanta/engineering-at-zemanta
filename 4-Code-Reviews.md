@@ -145,6 +145,11 @@ Every non-trivial pull request should contain context about the change it is int
 
 At minimum, **you must include a link to a Trello ticket**, but you can add as much context as you think it's required to understand the problem you're solving. The best way to do this is to put yourself in the role of the reviewer for a while and go over your PR yourself.
 
+If your pull request is large, e.g. it introduces a large change, many small changes or a change that affects many files, it is advisable to include a list of highlights that tell the reviewer which files/changes they should pay particular attention to. An example of such highlights:
+- changes the way X is handled (`X.py`)
+- A is now doing B instead of C (`A.py`)
+- added a new test in `A_test.py`
+
 ### 2.2. Roadmap
 
 If your PR is intentionally missing something, because you plan to add this in a separate PR, than explicitly declare what's missing in order not to confuse the reviewer.
