@@ -38,5 +38,5 @@ Engineering is organized into 2 teams, each with it's own role and purpose. Ever
 
 The 2 aforementioned teams are:
 
-* **Nextgen Team** - Owns and builds new features for our user facing dashboard and API.
+* **Nextgen Team** - Owns and builds new features for our user facing dashboard and API. Also makes sure campaign settings are synced reliably to all supply partners.
 * **Revenue Team** - In charge of scaling our real-time bidding infrastructure. This also includes supporting our supply partners and improving prediction models.
