@@ -30,17 +30,13 @@ There are multiple roles within this team but here are the 2 main roles:
    7. Communicate /w stakeholders
    8. Analyze product performance
 * **Account Manager & Customer Support** - mainly responsible for managing managed campaigns for our clients and supporting self-serve users of our DSP platform
-* **Product Marketing Manager** - this is a US based position and PMMs are responsible for marketing our product, helping sales to grasp our ever evolving technology, managing post release communication to clients
 
 
 ## 3. Engineering
 
-Engineering is organized into 5 teams, each with it's own role and purpose. Every team has a tech lead to whom all engineers within that team report to and a assigned product manager. Product manager and tech lead share a responsibility for project and program management. We do not have dedicated project managers for that matter.
+Engineering is organized into 2 teams, each with it's own role and purpose. Every team has a tech lead to whom all engineers within that team report to and an assigned product manager. Product manager and tech lead share a responsibility for project and program management. We do not have dedicated project managers for that matter.
 
-The 5 aforementioned teams are:
+The 2 aforementioned teams are:
 
-* **Next Generation Team** - responsible for building next generation features of our platform that are directly exposed to our users
-* **Support and Improve Team** - empowered to make continuous improvements to features introduced to our platform and making sure things don't break backwards
-* **Backend Team** - we own a large backend responsible for real time bidding, this team builds features that are backend related and supports our supply partners
-* **Data Science Team** - *"building painkillers, not vitamins"*; in other words they're responsible and empowered to continuously improve and monitor our bidding strategies and algorithms, find new data we can learn from, drive a continuous stream of experiments that lead towards acquiring new knowledge that provided back to product managers to make educated product decisions
-* **Infrastructure Team** - a team that supports other teams in terms of providing the means of building new features i.e. infrastructure. This is continuously making improvements to our underlying systems, handles configuration, builds tools to make a developer's life easier and handles day to day system operations where we lack automation. 
+* **Nextgen Team** - Owns and builds new features for our user facing dashboard and API.
+* **Revenue Team** - In charge of scaling our real-time bidding infrastructure. This also includes supporting our supply partners and improving prediction models.
