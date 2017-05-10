@@ -60,7 +60,7 @@ Do note that there are many repositories in our arsenal, but the good news is th
 As mentioned above we use github for:
 
 * hosting our git repos
-* authenticating to other services (e.g. Circle CI)
+* authenticating to other services (e.g. Jenkins)
 * code reviews via pull requests
 * we don't do issue tracking via github
 * we don't do releases
@@ -68,26 +68,22 @@ As mentioned above we use github for:
 
 The IT manager will give you access to github by adding your profile to Zemanta org.
 
-## 5. Circle CI
+## 5. Jenkins
 
-For every `git push` we run a build on Circle CI, the status of the build is propagated back to github via [status checks](https://github.com/blog/1935-see-results-from-all-pull-request-status-checks) on every pull request (i.e. this let's the code reviewer know that the pull request breaks the build).
+For every `git push` we run a build on Jenkins, the status of the build is propagated back to github via [status checks](https://github.com/blog/1935-see-results-from-all-pull-request-status-checks) on every pull request (i.e. this let's the code reviewer know that the pull request breaks the build).
 
 A successful build on `master` branch is also a prerequisite for most of our deployment procedures.
 
-You can access Circle CI via github OAuth. Just log in and "follow" the appropriate projects your manager has pointed out, so you'll be able to monitor build statuses.
+You can access Jenkins via github OAuth. Just log in and "follow" the appropriate projects your manager has pointed out, so you'll be able to monitor build statuses.
 
 ## 6. New relic
 
 New relic is our main performance monitoring service for our django based applications. Turn to IT manager to obtain access.
 
-## 7. Codeclimate
-
-We also have Codeclimate integrated with github. For every `git push` codeclimate will analyze your code and determine, if it's according to our minimal coding standards (e.g. PEP8).
-
-## 8. AWS Console
+## 7. AWS Console
 
 If required, IT manager will provide you access to AWS console. You'll need google authenticator app set up on your phone. The purpose of this console is to inspect configuration of our infrastructure.
 
-## 9. Google Compute Cloud
+## 8. Google Compute Cloud
 
 You'll be able to access this console via google apps OAuth once IT manager will provide you with access. We utilize appengine for a single web application where high availability and geo redundancy is required.
